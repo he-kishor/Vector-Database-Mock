@@ -1,9 +1,10 @@
 # Vector-Database-Mock
-Simulating a Mock Vector Database Using Numpy
+Simulating a Mock Vector Database Using Numpy,
 
 # Vector Database Mock
 
 This project demonstrates a simple Python-based vector database mockup that uses cosine similarity to find top matches for a given query.
+Base on the query it calculate the SmarthPhone product.
 
 ## Features
 - **Similarity Calculation**: Computes cosine similarity between a query vector and a dataset of vectors.

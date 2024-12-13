@@ -45,5 +45,6 @@ class Vector_Db_Mock:
     
     
 t1=Vector_Db_Mock
-product_query="Smartphone with high gaming phone"
-t1(product_query)
+
+query=input('Enter the product Description: ')
+t1(query)

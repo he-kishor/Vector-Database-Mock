@@ -61,4 +61,13 @@ python -m venv venv
 3. Product: "PulseEcho VR" | Similarity: 0.938
 ```
 
+## Example
+1. ``` bash
+(venv) PS C:\Users\nj991\Flask_Micro_Services\Vector-Database-Mock> python main.py
+Enter the product Description: Smarthphone with highest gaming phone
+Top Matches:
+1. Product: "Solaris Ultra" | Similarity: 0.973
+2. Product: "Glide Infinity" | Similarity: 0.947
+3. Product: "PulseEcho VR" | Similarity: 0.946
+```
 

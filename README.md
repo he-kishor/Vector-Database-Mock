@@ -52,7 +52,7 @@ python -m venv venv
 ```
 4. Run the main.py File using this command
 ``` bash
-  python main.py
+  python vector_database.py
 ```
 5. Enter the product Description: "Enter the Product description" (click enter)
 6. you will see a similar product:

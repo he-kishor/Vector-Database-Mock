@@ -10,6 +10,41 @@ Base on the query it calculate the SmarthPhone product.
 - **Similarity Calculation**: Computes cosine similarity between a query vector and a dataset of vectors.
 - **Top Matches**: Displays the top 3 results with the highest similarity scores.
 - **Mock Dataset**: Uses pre-loaded embeddings and product names for demonstration.
+- 
+## approaches:
+  - name: Direct Cosine Similarity I used
+    steps:
+      - "Compute cosine similarity between the query and each product's embedding."
+      - "Sort products by similarity score in descending order."
+      - "Select the top 3 most similar products."
+    details:
+      pros: 
+        - "Straightforward and simple to implement."
+      cons: 
+        - "Computationally expensive for large datasets due to pairwise similarity calculations."
+
+  - name: "Section-Averaging Strategy"
+    steps:
+      - "Divide the product list into 3–4 sections based on embedding similarity."
+      - "Compute the average embedding vector for each section."
+      - "Match the query with the average vectors to find the closest section."
+      - "Perform detailed similarity calculations only within the closest section."
+    details:
+      pros: 
+        - "Reduces the number of similarity comparisons."
+      cons: 
+        - "May struggle with dynamic queries where sections aren't well-defined."
+
+  - name: "K-Nearest Neighbors (KNN)"
+    steps:
+      - "Use KNN to efficiently find similar products based on embeddings."
+    details:
+      pros: 
+        - "Efficient for large-scale product embeddings."
+      cons: 
+        - "Requires indexing structures like KD-trees or Ball trees."
+        - "Performance depends on embedding dimensionality."
+
 
 ## How it Works
 The program calculates cosine similarity between the query embedding and dataset embeddings. Cosine similarity measures the cosine of the angle between two vectors, defined as:

@@ -25,7 +25,7 @@ class Vector_Db_Mock:
         similarities = []
         #cosine similarity (A.B/||A||||B||)
         for embedding in embeddings:
-            #I prefer to use skitlearn cosine function to calculate the cosine hardocode logic
+            #I prefer to instead skitlearn cosine to cosine hardocode logic
             
             # sum the all vector product 
             dot_product = sum(q * e for q, e in zip(query, embedding))
